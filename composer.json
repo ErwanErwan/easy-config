@@ -1,0 +1,15 @@
+{
+    "name": "erwan/easy-config",
+    "description": "easy configuration PHP class coupled with multi-dimensional array config php file",
+    "type": "PHP config class helper",
+    "authors": [
+        {
+            "name": "Erwan Touba",
+            "email": "erwan.touba@epitech.eu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Erwan\\": ""}
+    },
+    "require": {}
+}
