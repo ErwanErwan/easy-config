@@ -1,5 +1,7 @@
 <?php
 
+namespace Erwan;
+
 class Config {
 
 
@@ -7,7 +9,8 @@ class Config {
 	private static $instance;
 
 	private function __construct(){
-		$this->vars = require CONFIG_FILE;
+		// $this->vars = require CONFIG_FILE;
+		$this->vars = [];
 	}
 
 	public static function instance(){

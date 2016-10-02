@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "psr-4": {"Erwan\\": ""}
+        "psr-4": {"Erwan\\": "src/"}
     },
     "require": {}
 }

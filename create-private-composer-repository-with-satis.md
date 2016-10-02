@@ -201,12 +201,10 @@ composer install
 First we will install satis, more detailed info [here](https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md#satis)
 
 ```bash
-cd ~
-composer create-project composer/satis --stability=dev --keep-vcs
-cd satis
+composer create-project composer/satis ~/satis --stability=dev --keep-vcs
 ```
 
-Now we're gonna edit satis.json configuration file to setup repository infos
+Now we're gonna edit ~/satis/satis.json configuration file to setup repository infos
 
 
 ```json
@@ -224,8 +222,24 @@ Now we're gonna edit satis.json configuration file to setup repository infos
 Then we generate the composer repository : ```php bin/satis build <configuration file> <build-dir> ```\
 example:
 ```bash
-php bin/satis build satis.json www
+php ~/satis/bin/satis build ~/satis/satis.json satis_www
 ```
 
 
+you can now enter satis_www directory and run php local dev server in order to test
 
+```bash
+cd satis_www
+php -S localhost:8000 
+```
+
+then open your web browser and go to the following url: localhost:8000\
+you should see something like this
+
+[![oie_CQX6lk5sBlqK (1).png](https://s17.postimg.org/ein8rtcjz/oie_CQX6lk5s_Blq_K_1.png)](https://postimg.org/image/ospnr22ff/)
+
+
+##### 3.Using your repository
+
+
+we're going to create a new projet that will use our config class
