@@ -67,7 +67,8 @@ We're going to create the Config class.
 
 
 ```bash
-touch Config.php
+mkdir src
+touch src/Config.php
 ```
 
 
@@ -180,7 +181,7 @@ my full composer.json file:
         }
     ],
     "autoload": {
-        "psr-4": {"Erwan\\": ""}
+        "psr-4": {"Erwan\\": "src/"}
     },
     "require": {}
 }
